@@ -99,7 +99,9 @@ def movies_with_directors_set(source)
   #movie_with_director_name
   
   result = []
-  source.each { |name, movies| result << movie_with_director_name(name, movies)}
+  index = 0 
+  
+  
   
 end
 
