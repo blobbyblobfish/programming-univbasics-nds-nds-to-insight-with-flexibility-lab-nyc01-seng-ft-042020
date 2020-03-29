@@ -73,8 +73,14 @@ def gross_per_studio(collection)
   
   result = {} 
   gross = 0
+  index = 0 
   
-  collection.each { |worldwide_gross| result << collection(name, worldwide_gross)}
+  while index < collection.length do 
+    gross += collection[index][:worldwide_gross]
+    index += 1 
+  end
+  
+  
   
   result
   
