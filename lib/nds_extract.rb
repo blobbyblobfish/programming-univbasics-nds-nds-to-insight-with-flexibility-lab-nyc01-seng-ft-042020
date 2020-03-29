@@ -80,7 +80,7 @@ def gross_per_studio(collection)
     index += 1 
   end
   
-  
+  collection.each { |movie| result << movie_with_director_name(name, movie)}
   
   result
   
