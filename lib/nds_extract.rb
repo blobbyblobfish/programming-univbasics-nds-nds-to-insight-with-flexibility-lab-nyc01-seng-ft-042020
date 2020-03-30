@@ -76,12 +76,13 @@ def gross_per_studio(collection)
   index = 0 
   
   while index < collection.length do 
-    studio = collection[index][:studio]
     gross += collection[index][:worldwide_gross]
     index += 1 
   end
   
-  collection.each { |studio, gross| result = movie_with_director_name(:studio=> gross)}
+  studio = collection[index][:studio]
+  
+  collection.each { |studio, gross| result = studio => gross}
   
   result
   
