@@ -82,7 +82,7 @@ def gross_per_studio(collection)
   
   studio = collection[index][:studio]
   
-  collection.each { |studio, gross| result = studio => gross}
+  collection.each { |studio, gross| result = movie_with_director_name(studio => gross)}
   
   result
   
