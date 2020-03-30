@@ -80,7 +80,7 @@ def gross_per_studio(collection)
     index += 1 
   end
   
-  collection.each { |name| result = movie_with_director_name(:name=> gross)}
+  collection.each { |name, gross| result = movie_with_director_name(:name=> gross)}
   
   result
   
